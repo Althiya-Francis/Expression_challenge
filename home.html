@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Expression Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Full-screen mirrored webcam feed -->
+  <video id="webcam" autoplay muted playsinline></video>
+
+  <!-- Dark scrim shown behind the result / final / error modals -->
+  <div id="scrim" class="scrim hidden"></div>
+
+  <!-- ===================== FLOATING OVERLAYS ===================== -->
+
+  <!-- Target expression — small floating photo, top-left -->
+  <div id="targetPanel" class="target-panel hidden">
+    <img id="targetImage" src="" alt="Target expression">
+  </div>
+
+  <!-- Countdown timer — circular ring, top-center -->
+  <div id="timerPanel" class="timer-panel hidden">
+    <svg class="ring" viewBox="0 0 100 100">
+      <circle class="ring-track" cx="50" cy="50" r="42"></circle>
+      <circle id="timerRing" class="ring-progress" cx="50" cy="50" r="42"></circle>
+    </svg>
+    <div id="timerText" class="ring-label">5</div>
+  </div>
+
+  <!-- Accuracy — circular ring, top-right -->
+  <div id="accuracyPanel" class="accuracy-panel hidden">
+    <svg class="ring" viewBox="0 0 100 100">
+      <circle class="ring-track" cx="50" cy="50" r="42"></circle>
+      <circle id="accuracyRing" class="ring-progress accuracy" cx="50" cy="50" r="42"></circle>
+    </svg>
+    <div class="ring-label-wrap">
+      <div id="accuracyText" class="ring-label">0%</div>
+      <div class="ring-caption">Accuracy</div>
+    </div>
+  </div>
+
+  <!-- Subtle score readout, bottom-left -->
+  <div id="scorePanel" class="score-panel hidden">Score <span id="scoreText">0</span></div>
+
+  <!-- Small floating face-warning toast -->
+  <div id="faceWarning" class="face-warning hidden"></div>
+
+  <!-- ===================== MODALS ===================== -->
+
+  <!-- Loading state while camera / models start up -->
+  <div id="loadingScreen" class="modal loading-screen">
+    <div class="spinner"></div>
+    <div id="loadingText" class="loading-text">Starting camera…</div>
+  </div>
+
+  <!-- Camera permission denied / unavailable -->
+  <div id="permissionScreen" class="modal permission-screen hidden">
+    <div class="permission-icon">🎥</div>
+    <div class="permission-title">Camera access needed</div>
+    <div class="permission-text" id="permissionText">
+      This game needs your webcam to see your expressions. Please allow camera access and reload the page.
+    </div>
+    <button id="retryButton" class="retry-btn">Try Again</button>
+  </div>
+
+  <!-- Round result pop-up -->
+  <div id="resultModal" class="modal result-modal hidden">
+    <div id="resultIcon" class="result-icon">✓</div>
+    <div id="resultTitle" class="result-title">Correct!</div>
+    <div id="resultAccuracy" class="result-accuracy">0%</div>
+    <div class="result-caption">Accuracy</div>
+    <div class="result-next">Next round…</div>
+  </div>
+
+  <!-- Final results screen -->
+  <div id="finalModal" class="modal final-modal hidden">
+    <div class="final-title">Expression Challenge Complete</div>
+    <div class="final-row">
+      <div class="final-label">Final Score</div>
+      <div id="finalScore" class="final-value">0 / 160</div>
+    </div>
+    <div class="final-row">
+      <div class="final-label">Average Accuracy</div>
+      <div id="finalAccuracy" class="final-value">0%</div>
+    </div>
+    <div class="final-row">
+      <div class="final-label">Rounds Completed</div>
+      <div id="finalRounds" class="final-value">0 / 16</div>
+    </div>
+    <button id="playAgainButton" class="play-again-btn">Play Again</button>
+  </div>
+
+  <!-- face-api.js (bundled build with all detectors) -->
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
