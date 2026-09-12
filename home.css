@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -20,7 +20,6 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1;
   animation: slowZoom 18s ease-in-out infinite alternate;
 }
 
