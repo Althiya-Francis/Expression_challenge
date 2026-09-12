@@ -1,9 +1,10 @@
 <img width="1280" height="640" alt="Wordnt Project Banner" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
 <img width="1600" height="850" alt="WhatsApp Image 2026-09-12 at 6 15 49 AM" src="https://github.com/user-attachments/assets/9c299758-4b30-4d67-8639-09a2d0039dd5" />
+<img width="1600" height="850" alt="WhatsApp Image 2026-09-12 at 6 15 32 AM" src="https://github.com/user-attachments/assets/f2645197-be74-4aa6-8601-10827a6151e8" />
 <img width="1600" height="850" alt="WhatsApp Image 2026-09-12 at 6 16 05 AM" src="https://github.com/user-attachments/assets/44a0195c-3c97-4a81-97c6-09aef487ce86" />
 
-<img width="1600" height="850" alt="WhatsApp Image 2026-09-12 at 6 15 32 AM" src="https://github.com/user-attachments/assets/f2645197-be74-4aa6-8601-10827a6151e8" />
+
 
 # Wordnt 🎭🎯
 
