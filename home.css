@@ -16,7 +16,7 @@ html, body {
 .bg-layer {
   position: fixed;
   inset: 0;
-  background-image: url("assets/home-bg.png");
+  background-image: url("intro.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
