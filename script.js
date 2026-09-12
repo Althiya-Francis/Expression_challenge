@@ -22,22 +22,22 @@ const DETECTION_INTERVAL = 200;  // ms between each face-api detection tick
    ============================================================ */
 
 const challenges = [
-  { image: "images/image1.jpg",  expression: "happy",     name: "HAPPY" },
-  { image: "images/image2.jpg",  expression: "surprised",  name: "SURPRISED" },
-  { image: "images/image3.jpg",  expression: "fearful",    name: "FEARFUL" },
-  { image: "images/image4.jpg",  expression: "angry",      name: "ANGRY" },
-  { image: "images/image5.jpg",  expression: "happy",      name: "HAPPY" },
-  { image: "images/image6.jpg",  expression: "sad",        name: "SAD" },
-  { image: "images/image7.jpg",  expression: "happy",      name: "HAPPY" },
-  { image: "images/image8.jpg",  expression: "neutral",    name: "NEUTRAL" },
-  { image: "images/image9.jpg",  expression: "neutral",    name: "NEUTRAL" },
-  { image: "images/image10.jpg", expression: "happy",      name: "HAPPY" },
-  { image: "images/image11.jpg", expression: "surprised",  name: "SURPRISED" },
-  { image: "images/image12.jpg", expression: "angry",      name: "ANGRY" },
-  { image: "images/image13.jpg", expression: "happy",      name: "HAPPY" },
-  { image: "images/image14.jpg", expression: "sad",        name: "SAD" },
-  { image: "images/image15.jpg", expression: "fearful",    name: "FEARFUL" },
-  { image: "images/image16.jpg", expression: "happy",      name: "HAPPY" },
+  { image: "image1.jpg",  expression: "happy",     name: "HAPPY" },
+  { image: "image2.jpg",  expression: "surprised",  name: "SURPRISED" },
+  { image: "image3.jpg",  expression: "fearful",    name: "FEARFUL" },
+  { image: "image4.jpg",  expression: "angry",      name: "ANGRY" },
+  { image: "image5.jpg",  expression: "happy",      name: "HAPPY" },
+  { image: "image6.jpg",  expression: "sad",        name: "SAD" },
+  { image: "image7.jpg",  expression: "happy",      name: "HAPPY" },
+  { image: "image8.jpg",  expression: "neutral",    name: "NEUTRAL" },
+  { image: "image9.jpg",  expression: "neutral",    name: "NEUTRAL" },
+  { image: "image10.jpg", expression: "happy",      name: "HAPPY" },
+  { image: "image11.jpg", expression: "surprised",  name: "SURPRISED" },
+  { image: "image12.jpg", expression: "angry",      name: "ANGRY" },
+  { image: "image13.jpg", expression: "happy",      name: "HAPPY" },
+  { image: "image14.jpg", expression: "sad",        name: "SAD" },
+  { image: "image15.jpg", expression: "fearful",    name: "FEARFUL" },
+  { image: "image16.jpg", expression: "happy",      name: "HAPPY" },
 ];
 
 /* ============================================================
